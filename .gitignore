@@ -1,0 +1,58 @@
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.ipynb_checkpoints/
+
+# Python virtual environments and packaging
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+build/
+*.whl
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Node.js / browser extension / dashboard
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.vite/
+dist/
+coverage/
+*.tsbuildinfo
+*.crx
+
+# Logs, local runtime files and temporary files
+*.log
+logs/
+*.pid
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.cache/
+.DS_Store
+Thumbs.db
+
+# Editor / IDE local files
+.vscode/
+.idea/
+
+# Old incompatible model artifact
+XGBoostClassifier.pickle.dat

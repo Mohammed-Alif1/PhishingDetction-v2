@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="brand">
+                <div class="logo">S</div>
+                <div>
+                    <h1>Sentinel<span>AI</span></h1>
+                    <p>PHISHING DETECTION SYSTEM</p>
+                </div>
+            </div>
+
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                ACTIVE
+            </div>
+        </header>
+
+        <!-- CURRENT WEBSITE -->
+        <section class="website-card">
+            <div class="section-label">
+                CURRENT WEBSITE
+            </div>
+
+            <div class="website-row">
+                <div class="website-icon">🌐</div>
+
+                <div class="website-details">
+                    <h2 id="hostname">Detecting website...</h2>
+                    <p id="websiteUrl">
+                        Waiting for current tab
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECURITY ANALYSIS -->
+        <section class="scan-card">
+
+            <div class="section-label">
+                SECURITY ANALYSIS
+            </div>
+
+            <!-- RISK METER -->
+            <div class="meter" id="meter">
+                <div class="meter-inner">
+                    <span id="riskValue">--</span>
+                    <small>RISK SCORE</small>
+                </div>
+            </div>
+
+            <!-- SCAN RESULT -->
+            <div class="result" id="result">
+                <div class="result-icon" id="resultIcon">
+                    ◇
+                </div>
+
+                <h2 id="resultTitle">
+                    Ready to Scan
+                </h2>
+
+                <p id="resultDescription">
+                    Analyze this website for potential
+                    phishing threats.
+                </p>
+            </div>
+
+            <!-- SCAN BUTTON -->
+            <button id="scanBtn" type="button">
+                <span id="buttonIcon">⌕</span>
+                <span id="buttonText">Scan Website</span>
+            </button>
+
+            <!-- NEW: OPEN DASHBOARD BUTTON -->
+            <button id="dashboardBtn" class="dashboard-btn" type="button">
+                <span>▦</span>
+                <span>Open Dashboard ↗</span>
+            </button>
+
+        </section>
+
+        <!-- INFORMATION -->
+        <div class="info-row">
+
+            <div>
+                <span class="info-label">
+                    DETECTION ENGINE
+                </span>
+                <strong>XGBoost ML</strong>
+            </div>
+
+            <div>
+                <span class="info-label">
+                    ANALYSIS
+                </span>
+                <strong>20 URL Features</strong>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <span>🛡 SentinelAI</span>
+            <span>Intelligent Threat Detection</span>
+        </footer>
+
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
